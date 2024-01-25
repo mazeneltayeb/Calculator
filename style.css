@@ -1,0 +1,224 @@
+body {
+    background-color: antiquewhite;
+}
+
+/* start Cal-body */
+.cal-body {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* end Cal-body */
+
+
+
+/* start cal-screen */
+.cal-screen {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 7px 7px 0 0;
+}
+
+.cal-screen .input,
+.cal-screen .output {
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.cal-screen .input {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* end cal-screen */
+
+
+/* start buttons */
+.buttons div {
+    border: solid 0.5px #00000054;
+    height: calc(500px / 5 - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+
+.buttons {
+    /* width: 400px;
+    height: 500px; */
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'ac ac del divide'
+        'seven eight nine multiple'
+        'four five six subtaction'
+        'one two three plus'
+        'zero dot equal equal'
+}
+
+.ac {
+    grid-area: ac;
+}
+
+.ac:hover {
+    background-color: rgb(162, 196, 113);
+
+}
+
+.del {
+    grid-area: del;
+}
+
+.del:hover {
+    background-color: rgb(206, 32, 32);
+
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.divide:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.seven:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.eight:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.nine:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.multiple {
+    grid-area: multiple;
+}
+
+.multiple:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.four {
+    grid-area: four;
+}
+
+.four:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.five {
+    grid-area: five;
+}
+
+.five:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.six {
+    grid-area: six;
+}
+
+.six:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.subtaction {
+    grid-area: subtaction;
+}
+
+.subtaction:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.one {
+    grid-area: one;
+}
+
+.one:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.two {
+    grid-area: two;
+}
+
+.two:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.three {
+    grid-area: three;
+}
+
+.three:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.plus:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.equal {
+    grid-area: equal;
+    background-color: rgba(255, 166, 0, 0.664);
+}
+
+.equal:hover {
+    background-color: orange;
+
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.zero:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.dot:hover {
+    background-color: rgb(228 223 215 / 72%);
+}
+
+/* endbuttons */
