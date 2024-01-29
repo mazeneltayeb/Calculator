@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./background-img.jpg);
+    background-size: cover;
+
+}
+.cal-body{
+background-color: #87BBA5;
+position: relative;
+max-width: 300px;
+width: 100%;
+border-radius: 10px;
+padding: 15px 20px;
+
+}
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+.buttons div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    font-weight: bold;
+    font-size: 16px;
+}
+.output{
+    font-size: 28px;
+    font-weight: bold;
+   
+}
+.operation , .del, .ac ,.nine{
+    background-color: #E88067 !important;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.cal-screen{
+height: 80px;
+width: 100%;
+background-color: aliceblue;
+margin-bottom: 15px;
+border-radius: 10px;
+font-size: 24px;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: end;
+padding: 10px;
+}

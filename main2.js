@@ -5,16 +5,18 @@ let resolve = ""
 let operation = ""
 
 let calc = (btnValue) => {
-    if (btnValue === "=" || btnValue === "*" || btnValue === "/" || btnValue === "+" || btnValue === "-") {
+    if (btnValue === "=" || btnValue === "*" || btnValue === "/" || btnValue === "+" || btnValue === "-"   ) {
         operation = eval(operation)
         resolve = operation
         display.innerHTML = resolve
-    } if (btnValue === "AC") {
+
+    }
+     if (btnValue === "AC") {
         operation = ""
     } if (btnValue === "Del") {
         operation = operation.toString().slice(0, -1)
     }
-    if (btnValue !== "=" && btnValue !== "AC" && btnValue !== "Del") {
+    if (btnValue !== "=" && btnValue !== "AC" && btnValue !== "Del" ) {
         operation += btnValue
     }
     display.innerHTML = operation
