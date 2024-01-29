@@ -9,7 +9,6 @@ let calc = (btnValue) => {
         operation = eval(operation)
         resolve = operation
         display.innerHTML = resolve
-
     }
      if (btnValue === "AC") {
         operation = ""
@@ -22,7 +21,7 @@ let calc = (btnValue) => {
     display.innerHTML = operation
 }
 buttons.forEach((button) => {
-    button.addEventListener("click", (e) => calc(e.target.dataset.value))
+    button.addEventListener("click", (e) => calc(e.target.dataset.value) )
 })
 
 
